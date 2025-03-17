@@ -1,0 +1,64 @@
+public class Venkatesh4 {
+    public static void productInfo(String name) {
+        System.out.println("Name: " + name);
+    }
+
+    public static void productInfo(String name, int productId) {
+        System.out.println("Name: " + name + " : Product ID: " + productId);
+    }
+
+    public static void productInfo(String name, String category) {
+        System.out.println("Name: " + name + " : Category: " + category);
+    }
+
+    public static void productInfo(String name, String category, double price) {
+        System.out.println("Name: " + name + " : Category: " + category + " : Price: " + price);
+    }
+
+    public static void productInfo(String name, int productId, double price) {
+        System.out.println("Name: " + name + " : Product ID: " + productId + " : Price: " + price);
+    }
+
+    public static void productInfo(String name, boolean inStock) {
+        System.out.println("Name: " + name + " : In Stock: " + inStock);
+    }
+
+    public static void productInfo(String name, int productId, int quantity) {
+        System.out.println("Name: " + name + " : Product ID: " + productId + " : Quantity: " + quantity);
+    }
+
+    public static void productInfo(String name, String category, int quantity) {
+        System.out.println("Name: " + name + " : Category: " + category + " : Quantity: " + quantity);
+    }
+
+    public static void productInfo(String name, String brand, double rating) {
+        System.out.println("Name: " + name + " : Brand: " + brand + " : Rating: " + rating);
+    }
+
+    public static void productInfo(String name, String category, boolean inStock, double price) {
+        System.out.println("Name: " + name + " : Category: " + category + " : In Stock: " + inStock + " : Price: " + price);
+    }
+
+    public static void productInfo(String name, int productId, String brand, double discount) {
+        System.out.println("Name: " + name + " : Product ID: " + productId + " : Brand: " + brand + " : Discount: " + discount + "%");
+    }
+
+    public static void productInfo(String name, String category, String brand, int warrantyYears) {
+        System.out.println("Name: " + name + " : Category: " + category + " : Brand: " + brand + " : Warranty: " + warrantyYears + " years");
+    }
+
+    public static void main(String[] args) {
+        productInfo("Laptop");
+        productInfo("Laptop", 101);
+        productInfo("Laptop", "Electronics");
+        productInfo("Laptop", "Electronics", 59999.99);
+        productInfo("Laptop", 101, 59999.99);
+        productInfo("Laptop", true);
+        productInfo("Laptop", 101, 50);
+        productInfo("Laptop", "Electronics", 50);
+        productInfo("Laptop", "Dell", 4.5);
+        productInfo("Laptop", "Electronics", true, 59999.99);
+        productInfo("Laptop", 101, "Dell", 10.0);
+        productInfo("Laptop", "Electronics", "Dell", 2);
+    }
+}
